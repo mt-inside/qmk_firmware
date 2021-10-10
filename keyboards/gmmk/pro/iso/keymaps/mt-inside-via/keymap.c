@@ -56,10 +56,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
+    /* HACK: can't get tmux recognising KC_KP_1/3 */
     if (clockwise) {
-      tap_code(KC_KP_1);
+      tap_code(KC_F12);
     } else {
-      tap_code(KC_KP_3);
+      tap_code(KC_F11);
     }
     return true;
 }
