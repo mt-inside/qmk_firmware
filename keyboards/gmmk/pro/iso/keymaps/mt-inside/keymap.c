@@ -65,7 +65,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     } else {
         tap_code(KC_F11);
     }
-    return true;
+
+    // Prevent default
+    return false;
 }
 #endif // ENCODER_ENABLE
 
