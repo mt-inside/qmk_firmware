@@ -1,2 +1,3 @@
-VIA_ENABLE = yes
+# NB: enabling VIA builds a firmware that apparently flashes but actually doesn't - you'll just notice your keymap doesn't change...
+#VIA_ENABLE = yes
 # RAW_ENABLE = yes - no RawHID yet for this board?
